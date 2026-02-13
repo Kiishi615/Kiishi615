@@ -1,52 +1,51 @@
-# Hi 👋 I'm Kiishi (Iteoluwakiishi Aberuagba)
+# Hi, I'm Kiishi 👋
 
-## AI/ML Learner & Python Builder
+## Python Developer & AI Engineer
 
-I'm focused on practical projects—especially **RAG systems, chatbots, and Streamlit apps** that turn ideas into working tools.
+I build practical **AI-powered applications**, specializing in **RAG (Retrieval-Augmented Generation)** systems and **LLM orchestration**. I focus on turning raw data into interactive, intelligent interfaces.
 
 - 🌍 Based in **Lagos, Nigeria**
-- 🧠 Currently learning how to build **AI agents**
-- 🔨 Building **end-to-end AI apps** (from data → retrieval → UI)
-- 📫 Reach me at [iteoluwakiishi.aberuagba@stu.cu.edu.ng](mailto:iteoluwakiishi.aberuagba@stu.cu.edu.ng)
+- 🔭 Specializing in **Backend Development** & **Vector Search Pipelines**
+- 💡 Passionate about **clean code** and **shipping production-ready apps**
+- 📫 Contact: [iteoluwakiishi.aberuagba@stu.cu.edu.ng](mailto:iteoluwakiishi.aberuagba@stu.cu.edu.ng)
 
 ---
 
-## 🔧 Tech Stack
+## 🛠 Tech Stack
 
-[![My Skills](https://skillicons.dev/icons?i=python,git,vscode,mysql,github)](https://skillicons.dev)
+**Core Languages:**
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white) ![SQL](https://img.shields.io/badge/MySQL-4479A1?style=flat&logo=mysql&logoColor=white) ![Git](https://img.shields.io/badge/Git-F05032?style=flat&logo=git&logoColor=white)
 
-**Also working with:** Streamlit • OpenAI API • LangChain • RAG (chunking, embeddings, vector databases)
+**AI Engineering:**
+![OpenAI](https://img.shields.io/badge/OpenAI-412991?style=flat&logo=openai&logoColor=white) ![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=flat&logo=langchain&logoColor=white) ![Pinecone](https://img.shields.io/badge/Pinecone-000000?style=flat&logo=openai&logoColor=white)
 
----
-
-## 🎯 Current Focus
-
-- Building **end-to-end AI apps** (from data → retrieval → UI)
-- Improving my ML foundation while shipping projects
-- Learning better deployment + engineering habits (clean code, reproducibility)
+**Web & Data:**
+![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=flat&logo=streamlit&logoColor=white) ![Vercel](https://img.shields.io/badge/Vercel-000000?style=flat&logo=vercel&logoColor=white)
 
 ---
 
 ## 🚀 Featured Projects
 
-| Project | Description | Link |
-|---------|-------------|------|
-| **RAG System** | Document Q&A bot (upload a file → ask questions) | [Live Demo](https://chatbok.streamlit.app/) |
-| **Trivia App** | Interactive quiz game built with Streamlit | [Repo](link) |
-| **Weather Bot** | Real-time weather checker | [Repo](link) |
+| Project | Description | Live Demo |
+|---------|-------------|-----------|
+| **DocAssistant (Full Stack)** | A polished **RAG web application** deployed on Vercel. Features a custom frontend and optimized document chunking for PDF interaction. | [View App](https://day14-doc-assistant.vercel.app/) |
+| **Chatbok (Streamlit)** | A Python-native **document analysis tool**. Designed for deep-diving into books and long-form content using vector search. | [View App](https://chatbok.streamlit.app/) |
 
 ---
 
 ## 📊 GitHub Stats
 
-<a href="http://www.github.com/Kiishi615"><img src="https://github-readme-stats.vercel.app/api?username=Kiishi615&show_icons=true&hide=&count_private=true&title_color=0891b2&text_color=ffffff&icon_color=0891b2&bg_color=1c1917&hide_border=true&show_icons=true" alt="Kiishi615's GitHub stats" /></a>
-
-<a href="http://www.github.com/Kiishi615"><img src="https://github-readme-streak-stats.herokuapp.com/?user=Kiishi615&stroke=ffffff&background=1c1917&ring=0891b2&fire=0891b2&currStreakNum=ffffff&currStreakLabel=0891b2&sideNums=ffffff&sideLabels=ffffff&dates=ffffff&hide_border=true" /></a>
-
-<a href="https://github.com/Kiishi615" align="left"><img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Kiishi615&langs_count=10&title_color=0891b2&text_color=ffffff&icon_color=0891b2&bg_color=1c1917&hide_border=true&locale=en&custom_title=Top%20Languages" alt="Top Languages" /></a>
+<p align="left">
+<img src="https://github-readme-stats.vercel.app/api?username=Kiishi615&show_icons=true&locale=en&theme=tokyonight&hide_border=true&bg_color=0D1117" alt="Kiishi615" />
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=Kiishi615&theme=tokyonight&hide_border=true&background=0D1117" alt="Kiishi615" />
+</p>
 
 ---
 
-## 🤝 Connect With Me
+## 🤝 Let's Connect
 
-<p align="left"> <a href="https://www.github.com/Kiishi615" target="_blank" rel="noreferrer"> <picture> <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/github-dark.svg" /> <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/github.svg" /> <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/github.svg" width="32" height="32" alt="GitHub" title="GitHub" /> </picture> </a> <a href="https://www.linkedin.com/in/iteoluwakiishi-aberuagba-9bb7a1239" target="_blank" rel="noreferrer"> <picture> <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/linkedin-dark.svg" /> <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/linkedin.svg" /> <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/linkedin.svg" width="32" height="32" alt="LinkedIn" title="LinkedIn" /> </picture> </a></p>
+<p align="left">
+<a href="https://www.linkedin.com/in/iteoluwakiishi-aberuagba-9bb7a1239" target="_blank">
+  <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
+</a>
+</p>
