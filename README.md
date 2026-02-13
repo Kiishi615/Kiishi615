@@ -7,7 +7,7 @@ I build practical **AI-powered applications**, specializing in **RAG (Retrieval-
 - 🌍 Based in **Lagos, Nigeria**
 - 🔭 Specializing in **Backend Development** & **Vector Search Pipelines**
 - 💡 Passionate about **clean code** and **shipping production-ready apps**
-- 📫 Contact: [iteoluwakiishi.aberuagba@stu.cu.edu.ng](mailto:iteoluwakiishi.aberuagba@stu.cu.edu.ng)
+- 📫 Contact: [davidaberuagba@gmail.com](mailto:davidaberuagba@gmail.com)
 
 ---
 
