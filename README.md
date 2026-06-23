@@ -6,7 +6,7 @@ I build production-grade AI systems — from agentic research assistants and rea
 
 - 🌍 Based in **Lagos, Nigeria**
 - 🔭 Building **agentic AI**, **computer vision**, and **automated data pipelines**
-- 🚀 Deploying to **HuggingFace Spaces**, **Railway**, **Netlify** & **GitHub Actions**
+- 🚀 Deploying to **HuggingFace Spaces**, **Railway**, & **GitHub Actions**
 - 💡 Passionate about **clean architecture** and **production-ready systems**
 - 📫 Contact: [davidaberuagba@gmail.com](mailto:davidaberuagba@gmail.com)
 
@@ -17,9 +17,7 @@ I build production-grade AI systems — from agentic research assistants and rea
 **Languages & Frameworks**
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat&logo=typescript&logoColor=white)
 ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat&logo=fastapi&logoColor=white)
-![Flask](https://img.shields.io/badge/Flask-000000?style=flat&logo=flask&logoColor=white)
 
 **AI / ML**
 
@@ -39,7 +37,6 @@ I build production-grade AI systems — from agentic research assistants and rea
 ![HuggingFace](https://img.shields.io/badge/HuggingFace_Spaces-FFD21E?style=flat&logo=huggingface&logoColor=black)
 ![Railway](https://img.shields.io/badge/Railway-0B0D0E?style=flat&logo=railway&logoColor=white)
 ![Vercel](https://img.shields.io/badge/Vercel-000000?style=flat&logo=vercel&logoColor=white)
-![Netlify](https://img.shields.io/badge/Netlify-00C7B7?style=flat&logo=netlify&logoColor=white)
 
 ---
 
