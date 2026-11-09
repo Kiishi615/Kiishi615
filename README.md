@@ -1,80 +1,60 @@
-# Hi, I'm Kiishi 👋
+# Iteoluwakiishi (Kiishi) Aberuagba
 
-## Python Developer & AI/ML Engineer
+AI Engineer and Python Developer in Lagos, Nigeria.
 
-I build production-grade AI systems — from agentic research assistants and real-time computer vision to automated data pipelines. I focus on shipping end-to-end: model training, API design, containerisation, and cloud deployment.
+I started in chemical engineering and now build AI systems in Python. Most of my recent work covers real-time voice agents on AWS, financial research pipelines for the Nigerian stock market, and automated machine learning tools.
 
-- 🌍 Based in **Lagos, Nigeria**
-- 🔭 Building **agentic AI**, **computer vision**, and **automated data pipelines**
-- 🚀 Deploying to **HuggingFace Spaces**, **Railway**, & **GitHub Actions**
-- 💡 Passionate about **clean architecture** and **production-ready systems**
-- 📫 Contact: [davidaberuagba@gmail.com](mailto:davidaberuagba@gmail.com)
+Contact: [davidaberuagba@gmail.com](mailto:davidaberuagba@gmail.com) | [LinkedIn](https://www.linkedin.com/in/iteoluwakiishi-aberuagba-9bb7a1239)
 
----
+## Featured projects
 
-## 🛠 Tech Stack
+### Kiishi.AI Front Desk: AI voice receptionist (Private repository)
+Python, FastAPI, Pipecat, Speechmatics, ElevenLabs, Claude Haiku, GPT-5-nano, Telnyx, PostgreSQL, Google Calendar API, n8n, Docker, AWS (EC2, SSM, IAM, OIDC)
 
-**Languages & Frameworks**
+A missed call costs a small business a customer, and round-the-clock phone staff is expensive. I built a voice agent named Daniel that answers inbound phone calls, qualifies leads, and books appointments on Google Calendar.
 
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
-![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat&logo=fastapi&logoColor=white)
+- Detects caller country codes across 245 regions to select a matching local accent (such as Nigerian or Egyptian English) and switches between new-caller onboarding and returning-caller check-ins.
+- Uses the phone-ringing phase to load caller history from PostgreSQL, warm up Google Calendar OAuth, and prepare the voice model. This keeps first-turn voice latency under one second.
+- Passes a 1,000-entry custom dictionary with phonetic pronunciation rules to Speechmatics STT so it recognizes Yoruba, Igbo, and other African caller names.
+- Gives the LLM 10 mid-call tools to check availability, book or reschedule meetings, read past call context, and hang up. All calendar math runs through a deterministic date-resolver tool.
+- Runs a post-hangup pass with GPT-5-nano to extract structured caller summaries and sends webhooks to an n8n pipeline for SMS, calendar entries, email, and Telegram alerts.
+- Tracks the USD cost of each call across five services (telephony minutes, STT audio time, TTS characters, cached and uncached Claude Haiku tokens, and post-call extraction) and writes itemized totals to PostgreSQL.
+- Stores encrypted credentials in AWS SSM Parameter Store with an EC2 sync watcher that reloads containers without manual SSH. Deploys through GitHub Actions, OIDC, and SSM Run Command with Port 22 closed, and logs application errors to Amazon CloudWatch.
 
-**AI / ML**
+Live test number: call **+1 (773) 337-2440** to speak with Daniel.
 
-![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=flat&logo=langchain&logoColor=white)
-![LangGraph](https://img.shields.io/badge/LangGraph-1C3C3C?style=flat)
-![OpenAI](https://img.shields.io/badge/OpenAI-412991?style=flat&logo=openai&logoColor=white)
-![Anthropic](https://img.shields.io/badge/Anthropic_Claude-191919?style=flat)
-![Google Gemini](https://img.shields.io/badge/Gemini-4285F4?style=flat&logo=google&logoColor=white)
-![Pinecone](https://img.shields.io/badge/Pinecone-000000?style=flat&logo=pinecone&logoColor=white)
-![MediaPipe](https://img.shields.io/badge/MediaPipe-4285F4?style=flat&logo=google&logoColor=white)
-![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=flat&logo=scikit-learn&logoColor=white)
+### [Nairacle: AI research assistant for the Nigerian stock market](https://github.com/Kiishi615/The_Nairacle) ([Ingester](https://github.com/Kiishi615/Nairacle_Ingester) | [Stock DB Updater](https://github.com/Kiishi615/Stock_DB_Updater))
+Python, LangChain, LangGraph, Pinecone, Gemini, Tavily, Neon PostgreSQL, LangSmith, HTML/JS
 
-**Infrastructure & DevOps**
+Standard web search mixes old articles with top-ranked general pages when you ask about Nigerian equities. Nairacle answers plain-English questions about companies on the Nigerian Exchange (NGX) using a curated news and price database.
 
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white)
-![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat&logo=githubactions&logoColor=white)
-![HuggingFace](https://img.shields.io/badge/HuggingFace_Spaces-FFD21E?style=flat&logo=huggingface&logoColor=black)
-![Railway](https://img.shields.io/badge/Railway-0B0D0E?style=flat&logo=railway&logoColor=white)
-![Vercel](https://img.shields.io/badge/Vercel-000000?style=flat&logo=vercel&logoColor=white)
+- Scraped about 14,000 NGX news articles and used an LLM pipeline to filter out noise and compress the 4,900 relevant articles into dense summaries.
+- Checks for new articles every day on a schedule, then filters, summarizes, embeds, and stores them without manual intervention.
+- Searches by meaning, weights each source by age with a 6-month default window, and reranks results so current articles come first.
+- Combines live stock prices from TradingView Screener with daily historical equity prices stored in Neon PostgreSQL.
+- Logs every agent step to LangSmith and serves results through a web interface and REST API.
 
----
+### [ML Intern: Conversational machine learning pipeline](https://github.com/Kiishi615/ML_Intern_Deployed)
+Python, LangChain, OpenAI, SQLite, FastAPI, HTML/CSS/JS
 
-## 🚀 Featured Projects
+ML Intern lets a user upload a CSV file, state a prediction goal in plain English, and get a trained model with an evaluation report.
 
-### [The Nairacle](https://github.com/Kiishi615/The_Nairacle)
-Nigerian financial research agent powered by **LangGraph, Claude, Pinecone & Tavily**. Provides an intelligent Telegram Mini App interface for researching Nigerian markets, banking, economy, and stock prices. Deployed on Railway with Docker.
+- Chains more than 60 tools to clean data, engineer features, select and tune models, evaluate metrics, and plot charts.
+- Tracks dataframes, trained models, and prior decisions across the session so the user can ask follow-up questions in the same chat.
+- Logs every user request and tool call to SQLite for debugging.
+- Connects a custom web frontend to a FastAPI backend.
 
-### [ASL to Words](https://github.com/Kiishi615/ASL_to_Words)
-Real-time American Sign Language detector that translates hand signs into words using **MediaPipe** hand landmarks and a trained **Random Forest** classifier. Deployed on HuggingFace Spaces with Docker & Gunicorn.
+## Other repositories
 
-### [ML Intern Agent](https://github.com/Kiishi615/ML_Intern_Deployed)
-Autonomous ML Intern Agent built with **LangGraph and Gemini**, deployed on HuggingFace Spaces. Features tool-calling, session management, and a Telegram Mini App frontend.
+- [Job Scraper Pipeline](https://github.com/Kiishi615/job-scraper-pipeline): Scrapes job listings from LinkedIn, Indeed, and Jobberman on a GitHub Actions schedule with Docker and sends alerts to Telegram.
+- [DocAssist](https://github.com/Kiishi615/day14-doc-assistant) ([Live app](https://day14-doc-assistant.vercel.app/)): Document Q&A app with multi-conversation support, token tracking, and chat export, deployed on Vercel.
+- [ASL to Words](https://github.com/Kiishi615/ASL_to_Words): Translates American Sign Language hand signs into words using MediaPipe hand landmarks and a Random Forest classifier.
 
-### [Nairacle Ingester](https://github.com/Kiishi615/Nairacle_Ingester)
-Automated daily financial news ingestion pipeline. Scrapes Nairametrics, classifies articles, embeds and upserts to Pinecone — all running on a **GitHub Actions** cron schedule with Telegram notifications.
+## Technical skills
 
-### [Job Scraper Pipeline](https://github.com/Kiishi615/job-scraper-pipeline)
-Multi-source job scraper (LinkedIn, Indeed, Jobberman) with **Docker, GitHub Actions CI/CD**, configurable scheduling, and Telegram notifications.
-
-### [DocAssist](https://github.com/Kiishi615/day14-doc-assistant) · [View App](https://day14-doc-assistant.vercel.app/)
-RAG document assistant with multi-conversation support, token tracking, and export. Built with **Next.js** and deployed on Vercel.
-
----
-
-## 📊 GitHub Stats
-
-<p align="left">
-<img src="https://github-readme-stats.vercel.app/api?username=Kiishi615&show_icons=true&locale=en&theme=tokyonight&hide_border=true&bg_color=0D1117" alt="Kiishi615" />
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=Kiishi615&theme=tokyonight&hide_border=true&background=0D1117" alt="Kiishi615" />
-</p>
-
----
-
-## 🤝 Let's Connect
-
-<p align="left">
-<a href="https://www.linkedin.com/in/iteoluwakiishi-aberuagba-9bb7a1239" target="_blank">
-  <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
-</a>
-</p>
+- Languages: Python, HTML, CSS, JavaScript
+- Voice AI: Pipecat, Speechmatics (custom vocabulary STT), Deepgram, ElevenLabs (dialogue TTS), Telnyx
+- AI and ML: RAG systems, LangChain, LangGraph, vector search, AutoML, scikit-learn
+- LLM providers: Anthropic (Claude Haiku), OpenAI (GPT-5-nano), Google (Gemini)
+- Infrastructure: FastAPI, Streamlit, Pinecone, ChromaDB, SQLite, PostgreSQL, Neon, Vercel, Hugging Face, Docker, AWS (EC2, SSM, IAM, OIDC), GitHub Actions, n8n
+- Observability: Amazon CloudWatch, LangSmith, multi-provider cost tracking, audio call recording pipelines
