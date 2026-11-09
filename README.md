@@ -2,7 +2,7 @@
 
 **AI Engineer & Python Developer** · 📍 Lagos, Nigeria
 
-I started in chemical engineering and now build AI systems in Python. Most of my recent work covers **real-time voice agents** on AWS, **financial research pipelines** for the Nigerian stock market, and **conversational AutoML tools**.
+I build AI systems in Python. Most of my recent work covers **real-time voice agents** on AWS, **financial research pipelines** for the Nigerian stock market, and **conversational AutoML tools**.
 
 📫 [davidaberuagba@gmail.com](mailto:davidaberuagba@gmail.com) · [LinkedIn](https://www.linkedin.com/in/iteoluwakiishi-aberuagba-9bb7a1239)
 
